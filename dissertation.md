@@ -5,7 +5,14 @@ Advisor: John Rust. Committee: Nathan Miller, Marius Schwartz.
 
 The dissertation studies the economics of search algorithms deployed by platforms. It is competition-policy research: it builds measurement infrastructure for assessing algorithmic market power, tests it on real platform data, and evaluates regulatory remedies with quantified trade-offs.
 
-- Full text: Georgetown repository record, https://repository.digital.georgetown.edu/handle/10822/1088607 (the repository is offline as of November 2026; the link should resolve when it relaunches). Also on WorldCat, OCLC 1554737862: https://search.worldcat.org/title/1554737862
+## Full text (in this repo)
+
+- [Full thesis (158 pp)](dissertation/Monk-Essays-on-the-Economics-of-Search-Algorithms.pdf)
+- [Chapter 1 — A Framework for Measuring Algorithmic Search Power (28 pp, includes Appendix A)](dissertation/chapter-1-framework-for-measuring-algorithmic-search-power.pdf)
+- [Chapter 2 — Effects of Algorithmic Search Power for JD.com (70 pp, includes Appendix B)](dissertation/chapter-2-algorithmic-search-power-jd-com.pdf)
+- [Chapter 3 — Effects of User Data Sharing in Ecommerce (38 pp)](dissertation/chapter-3-data-sharing-in-ecommerce.pdf)
+
+Each chapter file includes its appendix; the combined bibliography is in the full thesis. Also on file at the Georgetown repository (offline as of November 2026; the record link should resolve when it relaunches): https://repository.digital.georgetown.edu/handle/10822/1088607 — and on WorldCat, OCLC 1554737862: https://search.worldcat.org/title/1554737862
 - Index words: Digital Economics, Industrial Organization, Market Power, Algorithms, Self-Preferencing, Personalized Pricing.
 
 ## Chapter 1 — A Framework for Measuring Algorithmic Search Power
