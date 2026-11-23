@@ -15,26 +15,19 @@ Each module is a seeded, randomized environment with a generator, an ex-post sol
 - **Nash / MPE / Bellman-optimal are ex-post diagnostics**, not the gate: exploitability, distance to stage-Nash, collusive gap, punishment classification, Euler errors.
 - **Anti-memorization.** All values and scenarios are randomized per seed, and the code generates the Nash / optimal policy ex post for that seed.
 
-## The 14 modules
+## What the eval covers
 
-| # | Module | Status |
-|---|--------|--------|
-| 1 | Repeated matrix games (2x2 / 3x3 / 4x4) — folk theorem, Green-Porter, Rotemberg-Saloner | Built (V1) |
-| 2 | Sports 2x2, penalty-kick family (Chiappori-Levitt-Groseclose; Palacios-Huerta) | Built (V1) |
-| 3 | Pricing: Bertrand / Cournot / Hotelling, entry, exit, merger, complements | Built (V1); design calls open (see below) |
-| 4 | Auctions / procurement: first- and second-price, private/common values | Built Oct 2026 (V1.1) |
-| 5 | Bargaining: Rubinstein + incomplete-values bilateral trade | Built Oct 2026 (V1.1); refinements unpushed |
-| 6 | Rust bus-engine DP: capital replacement (Rust 1987) | Built Sep 2026 (V1) |
-| 7 | Factory labor / inventory DP: Stokey-Lucas; Arrow-Harris-Marschak | Built Sep 2026 (V1) |
-| 8 | Wage-posting + policy shock: monopsony, Card-Krueger, minimum-wage shock | Built (V1) |
-| 9 | Moral hazard / incentives: Holmstrom; Shapiro-Stiglitz; Lazear-Rosen | Built Nov 2026 (V1.1) |
-| 10 | Igami HDD dynamic oligopoly: innovation, entry, M&A (Igami 2017; Ericson-Pakes) | Built Sep 2026 (V1) |
-| 11 | Merger scenario library: 5 scenarios (airline, MillerCoors, price leadership, target sale, DOJ review) | Built Sep 2026 (V1) |
-| 12 | Insurance screening: Akerlof; Rothschild-Stiglitz; Einav-Finkelstein | Built (V1) |
-| 13 | Commons / public goods, N-player (Samuelson; Hardin; Ostrom) | Built (V1) |
-| 14 | Supply chain / double marginalization: Spengler; newsvendor; bullwhip | Built Nov 2026 (V1.1) |
+The suite is organized by the type of game and the equilibrium concept being tested, not by topic. Each group probes a different strategic skill:
 
-**V1.1 is complete** (November 2026): modules #4, #5, #9, and #14 built on top of the V1 core. Full suite: 531 tests passing, 2 skipped.
+- **Repeated games and equilibrium selection** — can the agent sustain cooperation, punish defection, and read what its counterpart is doing over many rounds? Includes matrix games, a sports-style matching-pennies family, and multi-player commons problems.
+- **Pricing and competition** — oligopoly pricing under different market structures, with entry, exit, merger, and complementarity.
+- **Auctions and bargaining** — bidding under private and common values, and negotiation with incomplete information about the other side.
+- **Dynamic optimization** — single-agent problems where the optimum comes from a Bellman equation: capital replacement, inventory and labor, and wage-setting under a policy shock.
+- **Dynamic oligopoly and mergers** — investment, innovation, entry, and merger review in multi-period settings.
+- **Contracts and information** — incentive design under moral hazard and adverse selection: contracts, monitoring, and insurance menus.
+- **Supply chains** — vertical relations: wholesale pricing, ordering under uncertain demand and lead times, and the double-marginalization problem.
+
+The full suite is built and green (531 tests passing, 2 skipped). A two-mode version (solo vs. head-to-head) is built and green too (635 tests passing, 2 skipped) but lives locally for now — see [whats-next.md](whats-next.md).
 
 ## Two-mode evaluation (built November 2026, not yet pushed)
 
@@ -42,10 +35,9 @@ Every module now runs in two modes: **solo** (agent vs. scripted environment) an
 
 ## Open design questions
 
-- **Module #5, normalization floor.** The one open question blocking the #5 push: how to normalize scores — random-vs-threshold plus a diagnostic, or random-vs-Bayesian Monte Carlo.
-- **Pricing module (#3).** Two calls open since September 2026: (1) hybrid — scripted ladder stays the scoring gate, with Bertrand-only LLM-vs-LLM as a diagnostic; (2) gate on duopoly V1, plus one N-firm extension.
-- **Scoring caveats, by design.** Old scores are not comparable in modules #2, #12, #8, #13-PG, #11, and #1. The #11 oracle is a strong reference, not a proven upper bound. Wage evals run ~3× (3 seeds).
-- **Module #9 grading** uses ex-post *expected* profit, not realized profit — deliberate, because realized profit is noise-dominated.
+- **Score normalization.** How to normalize scores across scenarios is the one open question blocking the next push.
+- **Pricing module.** The design calls around the scoring gate and the head-to-head diagnostic are still open.
+- **Scoring caveats, by design.** Some earlier scores are not comparable to current ones after revisions; oracles are strong references, not proven upper bounds.
 
 ## Added scope (in progress)
 

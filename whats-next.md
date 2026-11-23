@@ -6,16 +6,16 @@ A working draft — roadmap for NashBench and for the dissertation papers. Expec
 
 **Near term**
 
-- **Push the two-mode eval.** Solo + head-to-head evaluation for all 14 modules is built and green (635 tests passing, 2 skipped) but still local-only. Push it to the repo.
-- **Resolve the #5 normalization floor.** The sole blocker on the #5 (bargaining) push: decide between keeping random-vs-threshold plus a diagnostic, or switching to random-vs-Bayesian Monte Carlo. Then push the #5 refinements.
-- **Settle the pricing-module calls.** (1) Hybrid: scripted ladder stays the scoring gate, Bertrand-only LLM-vs-LLM as a diagnostic. (2) Gate on duopoly V1, plus one N-firm extension.
+- **Push the two-mode eval.** Solo + head-to-head evaluation for the whole suite is built and green (635 tests passing, 2 skipped) but still local-only. Push it to the repo.
+- **Resolve the normalization question.** The sole blocker on the next push: how scores are normalized across scenarios. Then push the remaining module refinements.
+- **Settle the pricing-module design calls.** Around the scoring gate and the head-to-head diagnostic.
 
 **Then**
 
 - **Results UI vs. academic paper.** Both are scoped; the sequencing is the open call. The UI visualizes each model's play — the evolution of play in each module, how the agent is scoring, comparisons to optimal. The paper writes NashBench up as an academic-style piece (thesis, design, scoring, results).
 - **Post-training plan** (`TRAINING.md` in the repo, not started): train on the generator, hold out seeds / regions / modules.
-- **Score-stakes for module #2.** The #2 score is display-only today; it needs payoff-relevant stakes (e.g. shootout / elimination) or an explicit decision to accept it as display.
-- **Module #5, speed objective.** After the Q2 normalization question: keep gains as the gate, or add a speed-weighted secondary metric.
+- **Score-stakes.** One module's score is display-only today; it needs payoff-relevant stakes or an explicit decision to accept it as display.
+- **Speed objective.** After the normalization question: keep gains as the gate, or add a speed-weighted secondary metric.
 
 ## Dissertation papers — future edits
 

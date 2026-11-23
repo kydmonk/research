@@ -6,7 +6,7 @@ This repo is a public notebook of my personal research in progress — independe
 
 ## Contents
 
-- **[nashbench.md](nashbench.md)** — NashBench, a runnable-environment eval testing whether LLMs can find optima in strategic economic situations: thesis, design, the 14 modules, and current status.
+- **[nashbench.md](nashbench.md)** — NashBench, a runnable-environment eval testing whether LLMs can find optima in strategic economic situations: thesis, design, the modules grouped by game and equilibrium type, and current status.
 - **[dissertation.md](dissertation.md)** — My Georgetown PhD dissertation, *Essays on the Economics of Search Algorithms*: a framework for measuring algorithmic search power, an empirical application to JD.com, and the competitive effects of user data sharing in ecommerce. The full thesis and each chapter are also in the repo as PDFs under [dissertation/](dissertation/).
 - **[whats-next.md](whats-next.md)** — Roadmap: what's next for NashBench and future edits to the dissertation papers. A working draft.
 
