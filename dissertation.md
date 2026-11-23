@@ -29,7 +29,7 @@ The dissertation studies the economics of search algorithms deployed by platform
 - **Banning first-party participation** (treating all products as third-party): +5% consumer utility, −3% seller revenue per consumer, −35% platform profit per consumer. Consumers recover about a fifth of the gain from full realignment.
 - **Separating the distribution / shipping business** from ecommerce: +4% consumer utility, +2% seller revenue, −16% platform profit.
 - **Banning first-party products outright:** minimal consumer gain, but >25% seller and >50% platform losses — the blunt ban is worse than the targeted participation ban.
-- **Social-commerce partnerships** (e.g. Amazon × Meta/Snap): no additional competitive concern from the partnerships on market-power grounds.
+- **Social-commerce partnerships** (e.g. Amazon's partnerships with major social platforms): no additional competitive concern from the partnerships on market-power grounds.
 
 The chapter also notes two readings of the 97% result — genuine market power, or a suboptimal algorithm chosen via online experiments that miss the effect on total platform demand — which is itself a governance-relevant point about how platforms evaluate their own algorithms.
 

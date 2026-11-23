@@ -1,8 +1,8 @@
 # Research — Kyle Monk
 
-Economist (PhD, Georgetown, 2024) and Staff Data Scientist / Tech Lead at Meta, working on data for pre- and post-training of frontier models — reinforcement learning, coding agents, and computer-use agents.
+Economist (PhD, Georgetown, 2024).
 
-This repo is a public notebook of my research in progress. **Write-ups only, no code.** The NashBench evaluation code itself lives in a private repo; what is here is the design, the current state of the work, and where it goes next.
+This repo is a public notebook of my personal research in progress — independent work, not affiliated with any employer. **Write-ups only, no code.** The NashBench evaluation code itself lives in a private repo; what is here is the design, the current state of the work, and where it goes next.
 
 ## Contents
 
